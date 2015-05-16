@@ -11,15 +11,15 @@
     
 
     
-    <meta name="description" content="1、找到你的tomcat然后在conf文件中找到server.xml打开，然后再中间添加你想要绑定的域名，如下，绑定4evercai.xicp.net和192.168.100.221123456 &amp;lt;Host name=&quot;4evercai.xicp.net&quot; debug=&quot;0&quot; appBase=&quot;D:\tomcat_7\webapps&quot;       unpackWARs=&quot;true&quot; auto">
+    <meta name="description" content="找到你的tomcat然后在conf文件中找到server.xml打开，然后在&amp;lt;Engine&amp;gt;和&amp;lt;/Engine&amp;gt;中间添加你想要绑定的域名，如下，绑定4evercai.xicp.net和192.168.100.221123456&amp;lt;Host name=&quot;4evercai.xicp.net&quot; debug=&quot;0&quot; appBase=&quot;D:\tomcat_7\webapps&quot;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="tomcat多域名配置">
 <meta property="og:url" content="http://blog.4evercai.com/2015/05/14/tomcat-multi-domain-config/index.html">
 <meta property="og:site_name" content="肥菜个人博客">
-<meta property="og:description" content="1、找到你的tomcat然后在conf文件中找到server.xml打开，然后再中间添加你想要绑定的域名，如下，绑定4evercai.xicp.net和192.168.100.221123456 &amp;lt;Host name=&quot;4evercai.xicp.net&quot; debug=&quot;0&quot; appBase=&quot;D:\tomcat_7\webapps&quot;       unpackWARs=&quot;true&quot; auto">
+<meta property="og:description" content="找到你的tomcat然后在conf文件中找到server.xml打开，然后在&amp;lt;Engine&amp;gt;和&amp;lt;/Engine&amp;gt;中间添加你想要绑定的域名，如下，绑定4evercai.xicp.net和192.168.100.221123456&amp;lt;Host name=&quot;4evercai.xicp.net&quot; debug=&quot;0&quot; appBase=&quot;D:\tomcat_7\webapps&quot;">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tomcat多域名配置">
-<meta name="twitter:description" content="1、找到你的tomcat然后在conf文件中找到server.xml打开，然后再中间添加你想要绑定的域名，如下，绑定4evercai.xicp.net和192.168.100.221123456 &amp;lt;Host name=&quot;4evercai.xicp.net&quot; debug=&quot;0&quot; appBase=&quot;D:\tomcat_7\webapps&quot;       unpackWARs=&quot;true&quot; auto">
+<meta name="twitter:description" content="找到你的tomcat然后在conf文件中找到server.xml打开，然后在&amp;lt;Engine&amp;gt;和&amp;lt;/Engine&amp;gt;中间添加你想要绑定的域名，如下，绑定4evercai.xicp.net和192.168.100.221123456&amp;lt;Host name=&quot;4evercai.xicp.net&quot; debug=&quot;0&quot; appBase=&quot;D:\tomcat_7\webapps&quot;">
 
     
     <link rel="alternative" href="/atom.xml" title="肥菜个人博客" type="application/atom+xml">
@@ -86,7 +86,7 @@
 		<a href="/about" title="4evercai" target="_blank" itemprop="author">4evercai</a>
 		
   <p class="article-time">
-    <time datetime="2015-05-14T02:48:52.745Z" itemprop="datePublished"> 发表于 2015-05-14</time>
+    <time datetime="2015-05-14T02:56:29.000Z" itemprop="datePublished"> 发表于 2015-05-14</time>
     
   </p>
 </header>
@@ -99,7 +99,7 @@
 		
 		</div>
 		
-		<p>1、找到你的tomcat然后在conf文件中找到server.xml打开，然后再<engine></engine>中间添加你想要绑定的域名，如下，绑定4evercai.xicp.net和192.168.100.221<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> &lt;Host name=<span class="string">"4evercai.xicp.net"</span> debug=<span class="string">"0"</span> appBase=<span class="string">"D:\tomcat_7\webapps"</span></span><br><span class="line">       unpackWARs=<span class="string">"true"</span> autoDeploy=<span class="string">"true"</span></span><br><span class="line">       xmlValidation=<span class="string">"false"</span> xmlNamespaceAware=<span class="string">"false"</span>&gt;</span><br><span class="line">		&lt;<span class="built_in">alias</span>&gt;<span class="number">192.168</span>.<span class="number">100.221</span>&lt;/<span class="built_in">alias</span>&gt; </span><br><span class="line">        &lt;Context path=<span class="string">""</span> docBase=<span class="string">"D:\tomcat_7\webapps\aliyun"</span>  reloadable=<span class="string">"true"</span> <span class="keyword">case</span>Sensitive=<span class="string">"false"</span> debug=<span class="string">"0"</span>&gt;&lt;/Context&gt;</span><br><span class="line">&lt;/Host&gt;</span><br></pre></td></tr></table></figure></p>
+		<p>找到你的tomcat然后在conf文件中找到server.xml打开，然后在&lt;Engine&gt;和&lt;/Engine&gt;中间添加你想要绑定的域名，如下，绑定4evercai.xicp.net和192.168.100.221<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;Host name=<span class="string">"4evercai.xicp.net"</span> debug=<span class="string">"0"</span> appBase=<span class="string">"D:\tomcat_7\webapps"</span></span><br><span class="line">       unpackWARs=<span class="string">"true"</span> autoDeploy=<span class="string">"true"</span></span><br><span class="line">       xmlValidation=<span class="string">"false"</span> xmlNamespaceAware=<span class="string">"false"</span>&gt;</span><br><span class="line">		&lt;<span class="built_in">alias</span>&gt;<span class="number">192.168</span>.<span class="number">100.221</span>&lt;/<span class="built_in">alias</span>&gt; </span><br><span class="line">        &lt;Context path=<span class="string">""</span> docBase=<span class="string">"D:\tomcat_7\webapps\aliyun"</span>  reloadable=<span class="string">"true"</span> <span class="keyword">case</span>Sensitive=<span class="string">"false"</span> debug=<span class="string">"0"</span>&gt;&lt;/Context&gt;</span><br><span class="line">&lt;/Host&gt;</span><br></pre></td></tr></table></figure></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -133,19 +133,6 @@
    	       
 	</article>
 	
-<nav class="article-nav clearfix">
- 
-
-<div class="next">
-<a href="/2015/05/14/hello-world/"  title="Hello World">
- <strong>下一篇：</strong><br/> 
- <span>Hello World
-</span>
-</a>
-</div>
-
-</nav>
-
 	
 <section id="comments" class="comment">
 	<div class="ds-thread" data-thread-key="2015/05/14/tomcat-multi-domain-config/" data-title="tomcat多域名配置" data-url="http://blog.4evercai.com/2015/05/14/tomcat-multi-domain-config/"></div>
